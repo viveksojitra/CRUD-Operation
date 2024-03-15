@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Student-Sheet</title>
+</head>
+
+<body>
+    <!-- Select-Offcanvas -->
+    <div class="offcanvas offcanvas-end text-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header d-flex justify-content-end  user-select-none">
+            <h5>Selected Data</h5>
+            <button type="button-close" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- card -->
+                <div id="offcards" class="row pb-3">
+
+                    
+
+                </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="bg-container container rounded gap-2">
+                <div class="navbar-brand ms-auto me-0">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-box text-white" onchange="return false"></i>
+                    </a>
+                </div>
+                <span id="datacounter" class="badge bg-white text-dark fw-bold rounded"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FORM -->
+    <div class="container col-4 mt-5 pt-5 m-auto">
+        <div class="row">
+            <h1 class="title">Student Sheet</h1>
+            <form class="row needs-validation" novalidate>
+                <div class="input-wrapper col-6 p-2">
+                    <input type="text" id="grid" class="form-control" placeholder="GR ID" aria-label="GR ID" onblur="formValidate('grid_')" required>
+                    <!-- validation -->
+                    <small class="valid-feedback">
+                        Looks good!
+                    </small>
+                    <small class="invalid-feedback">
+                        Please enter your grid.
+                    </small>
+                </div>
+                <div class="input-wrapper col-6 p-2">
+                    <input type="date" id="joining" class="form-control" placeholder="Joining Date" aria-label="Joining Date" onblur="formValidate('joining_')" required>
+                    <!-- validation -->
+                    <small class="valid-feedback">
+                        Looks good!
+                    </small>
+                    <small class="invalid-feedback">X
+                        Please enter the joining date.
+                    </small>
+                </div>
+                <div class="input-wrapper col-12 p-2">
+                    <input type="text" id="name" class="form-control" placeholder="Full Name" aria-label="Full Name" onblur="formValidate('name_')" required>
+                    <!-- validation -->
+                    <small class="valid-feedback">
+                        Looks good!
+                    </small>
+                    <small class="invalid-feedback">
+                        Please enter your fullname.
+                    </small>
+                </div>
+                <div class="input-wrapper col-12 p-2">
+                    <input type="text" id="course" class="form-control" placeholder="Course" aria-label="Course" onblur="formValidate('course_')" required>
+                    <!-- validation -->
+                    <small class="valid-feedback">
+                        Looks good!
+                    </small>
+                    <small class="invalid-feedback">
+                        Please enter your course.
+                    </small>
+                </div>
+                <div class="input-wrapper col-6 p-2">
+                    <input type="text" id="duration" class="form-control" placeholder="Duration" aria-label="Duration" onblur="formValidate('duration_')" required>
+                    <!-- validation -->
+                    <small class="valid-feedback">
+                        Looks good!
+                    </small>
+                    <small class="invalid-feedback">
+                        Please enter course duration.
+                    </small>
+                </div>
+                <div class="input-wrapper col-6 p-2">
+                    <input type="text" id="contact" class="form-control" placeholder="Contact" aria-label="Contact" onblur="formValidate('contact_')" required>
+                    <!-- validation -->
+                    <small class="valid-feedback">
+                        Looks good!
+                    </small>
+                    <small class="invalid-feedback">
+                        Please enter your contact.
+                    </small>
+                </div>
+                <div class="p-2">
+                    <input class="btn btn-primary me-2" type="submit" value="submit" onclick="addData()">
+                    <input id="update" class="btn btn-info me-2" type="button" value="update">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- card -->
+    <section class="m-4">
+        <div class="container-fluid">
+            <div id="cards" class="row pb-3"></div>
+        </div>
+    </section>
+    
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

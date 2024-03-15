@@ -1,0 +1,175 @@
+body{
+    background-color: #282828;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Offcanvas */
+.offcanvas {
+    padding: 35px;
+    background-color: #026f75;
+}
+
+.btn-close {
+    padding: 0;
+}
+
+.btn-close:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+.btn-close svg {
+    font-size: 24px;
+    transition: all .3s ease;
+}
+
+.offcanvas-header .btn-close {
+    padding-top: 2%;
+    padding-right: 6%;
+}
+
+.h4-lg{
+    font-size: 18px;
+}
+
+/* Offcards */
+.offavatar,
+.no-data {
+    background-color: #282828;
+}
+
+.offavatar img {
+    margin: 0;
+    height: 50px;
+}
+
+.offcards-container .user-info h5 {
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: .29rem;
+}
+
+.offcards-container .no-data img {
+    width: 159px;
+}
+
+.offcards-container .square {
+    width: max-content;
+}
+
+/* #HEADER */
+.navbar{
+    background-color: #282828;
+}
+
+.bg-container{
+    background-color: #026f75;
+    transition: all .3s ease;
+}
+
+.badge{
+    min-width: 23px;
+    width: max-content;
+    height: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 4px;
+}
+
+/* #BODY */
+.title{
+    color: #026f75;
+    text-shadow: 0px 2px 2px gainsboro;
+}
+
+/* submit-button */
+.btn-primary{
+    background-color: #026f75;
+    border-color: rgb(127, 255, 212);
+    color: gainsboro;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.btn-primary:hover{
+    color: aquamarine;
+    background-color: #026f75;
+    border-color: #7fffd4;
+    box-shadow: 0px 0px 5px 0px aquamarine;
+}
+
+.btn:first-child:active{
+    color: #282828;
+    background-color: #026f75;
+    border-color: #026f75;
+    box-shadow: 0px 0px 5px 0px #026f75;
+}
+
+/* form */
+form{
+    transition: all .3s ease;
+}
+
+.input-wrapper{
+    transition: all .3s ease;
+}
+
+input{
+    text-transform: capitalize;
+}
+
+.form-control::placeholder{
+    font-weight: 600;
+}
+
+.form-control::placeholder:focus{
+    color: azure;
+}
+
+.form-control:focus{
+    font-weight: 600;
+    color: azure;
+    background-color: #026f75;
+    border-color: aquamarine;
+    box-shadow: 0 0 5px 0.2rem rgba(2, 111, 117, 0.5);
+}
+
+input:focus::placeholder{
+    color: azure;
+}
+
+/* cards */
+.avatar, .no-data{
+    background-color: #282828;
+}
+
+.avatar img{
+    margin: 0;
+    height: 200px;
+}
+
+.user-info h5{
+    text-transform: capitalize;
+    margin: .29rem;
+    padding-right: 10px;
+} 
+
+.no-data img{
+    width: 159px;
+}
+
+.square{
+    width: max-content;
+}
+
+/* cards.update */
+#update{
+    display: none;
+}
