@@ -246,7 +246,9 @@ const selectedDataShow = (data) => {
           <div class="d-flex justify-content-between flex-row flex-wrap align-content-center w-100">
               <div class="user-info d-flex flex-row flex-wrap align-content-center col-8 w-100 gap-2">
                   <span class="h4-lg fw-bold">${index + 1}</span>
-                  <h4 class="h4-lg mb-0 d-flex align-items-center ">Name : ${info.fullNameO}</h4>
+                  <h4 class="h4-lg mb-0 d-flex align-items-center text-capitalize">Name : ${
+                    info.fullNameO
+                  }</h4>
               </div>
           </div>
       </div>
